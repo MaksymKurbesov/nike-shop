@@ -5,9 +5,13 @@
 @import "utils/fonts";
 @import "utils/reset";
 
-// Modules:
-@import './modules/footer';
 
+
+.container {
+  max-width: 1170px;
+  width: 97%;
+  margin: 0 auto;
+}
 
 html {
   line-height: $mainLineHeight;
@@ -60,3 +64,11 @@ li {
   padding: 0;
   list-style-type: none;
 }
+
+// Modules:
+@import './modules/footer';
+@import './modules/header';
+
+//Pages
+
+@import './pages/main/main';
