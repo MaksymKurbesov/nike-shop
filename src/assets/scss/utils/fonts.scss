@@ -4,11 +4,11 @@
 
 @import "mixins";
 
-@include font-face("LoraItalic", "/assets/fonts/Lora-Italic");
-@include font-face("LoraBold", "/assets/fonts/Lora-Bold");
-@include font-face("LoraRegular", "/assets/fonts/Lora-Regular");
-@include font-face("LoraBoldItalic", "/assets/fonts/Lora-BoldItalic");
-@include font-face("ButlerBold", "/assets/fonts/Butler-Bold");
-@include font-face("ButlerRegular", "/assets/fonts/Butler-Regular");
-@include font-face("RalewayMedium", "/assets/fonts/Raleway-Medium");
-@include font-face("RalewayRegular", "/assets/fonts/Raleway-Regular");
+@include font-face("Lora", "/assets/fonts/Lora-Italic", 400, italic);
+@include font-face("Lora", "/assets/fonts/Lora-Bold", 700);
+@include font-face("Lora", "/assets/fonts/Lora-Regular", 400);
+@include font-face("Lora", "/assets/fonts/Lora-BoldItalic", 700, italic);
+@include font-face("Butler", "/assets/fonts/Butler-Bold", 700);
+@include font-face("Butler", "/assets/fonts/Butler-Regular", 400);
+@include font-face("Raleway", "/assets/fonts/Raleway-Medium", 500);
+@include font-face("Raleway", "/assets/fonts/Raleway-Regular", 400);

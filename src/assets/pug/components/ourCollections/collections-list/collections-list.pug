@@ -1,0 +1,42 @@
+mixin collection-list__item(numImg, name, price, sale, salePrice, grade)
+  .collections-list__item.product-info
+    .product-info__image
+      img(src=`/assets/img/content/collection${numImg}.png`, alt="")
+    .product-info__name= name
+    if sale
+      .product-info__price
+        .price-old= `${price}`
+        .price-new= `${salePrice}`
+          span .00
+    else  
+      .product-info__price= `${price}`
+        span .00   
+    .product-info__grade
+      .star-rating
+        .star-rating__wrap
+          input#star-rating-5.star-rating__input(type='radio' name='rating' value='5')
+          label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-5' title='5 out of 5 stars')
+          input#star-rating-4.star-rating__input(type='radio' name='rating' value='4')
+          label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-4' title='4 out of 5 stars')
+          input#star-rating-3.star-rating__input(type='radio' name='rating' value='3')
+          label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-3' title='3 out of 5 stars')
+          input#star-rating-2.star-rating__input(type='radio' name='rating' value='2')
+          label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-2' title='2 out of 5 stars')
+          input#star-rating-1.star-rating__input(type='radio' name='rating' value='1')
+          label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-1' title='1 out of 5 stars')
+    .product-info__overlay.overlay
+      .overlay__details
+        include /assets/img/svg/eye.svg
+      .overlay__cart
+        include /assets/img/svg/bag.svg
+
+
+.collections-list
+  +collection-list__item("01", "Jungle Moc Slip-on", "$300", true, "$200")
+  +collection-list__item("02", "Dunham Lexington", "$370")
+  +collection-list__item("03", "Cloudfoam Race Sneaker", "$250")
+  +collection-list__item("04", "Low waterproof Boot", "$150")
+  +collection-list__item("05", "Garren Cap Toe Brogue", "$420")
+  +collection-list__item("06", "Dunham Lexington", "$220", true, "$170")
+  +collection-list__item("07", "Merrell Encore Bypass", "$400")
+  +collection-list__item("08", "Sperry Top-Sider Lanyard 2-Eye", "$300")

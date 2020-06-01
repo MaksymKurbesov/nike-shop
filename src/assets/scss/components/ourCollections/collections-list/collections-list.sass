@@ -1,0 +1,121 @@
+.collections-list
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  margin-top: 60px
+  
+.product-info
+  width: 270px
+  height: 320px
+  margin: 0 11px
+  padding-bottom: 30px
+  position: relative
+  &:first-child
+    margin-bottom: 20px
+
+ 
+.product-info__image
+  width: 270px
+  height: 254px
+  display: flex
+  justify-content: center
+  cursor: pointer
+
+.product-info__name
+  color: #444444
+  font-family: Lora
+  font-size: 16px
+  font-weight: 700
+  text-align: center
+  margin-top: -35px
+
+.product-info__price
+  color: $aqua
+  font-family: Lora
+  font-size: 14px
+  font-weight: 700
+  text-align: center
+  margin-top: 7px
+  span
+    font-size: 10px 
+
+.price-old
+  display: inline
+  color: #999999
+  text-decoration: line-through
+  margin-right: 10px
+
+.price-new
+  display: inline  
+
+.product-info__grade
+  margin-top: 10px
+  text-align: center
+
+
+.product-info__overlay
+  width: 270px
+  height: 100%
+  display: none
+  justify-content: center
+  align-items: center
+  position: absolute
+  top: 0
+  left: 0
+  background-color: rgba(0, 0, 0, 0.5)  
+
+.product-info__overlay--active
+  display: flex      
+
+.overlay__details, .overlay__cart
+  margin: 0 5px
+  width: 50px
+  height: 50px
+  background-color: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  svg
+    width: 20px
+  &:hover
+    background-color: $aqua
+    svg 
+      fill: #fff 
+
+
+// RATING
+.star-rating
+  font-size: 0
+
+.star-rating__wrap
+  display: inline-block
+  font-size: 1rem
+
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+.star-rating__ico
+  font-size: 15px
+  margin: 0 2px
+  float: right
+  padding-left: 2px
+  cursor: pointer
+  color: #FFB300
+
+  &:last-child
+    padding-left: 0
+
+.star-rating__input
+  display: none
+
+.star-rating__ico:hover
+  &:before, ~ .star-rating__ico:before
+    content: "\f005"
+
+
+.star-rating__ico--active
+  &::before  
+    content: "\f005"
