@@ -1,0 +1,28 @@
+.header
+  .header-topbar
+    .header-topbar__shiping #[span Free Shipping on over 100$]
+    .header-topbar__settings.settings
+      label(for="language")
+        select.settings__language(name="language")
+          option(value="ENG") ENG
+          option(value="RUS") RUS
+          option(value="FR") FR
+      label(for="currency")    
+        select.settings__currency(name="currency")
+          option(value="EURO") €EUR
+          option(value="DOL") $DOL
+          option(value="RUB") ₽RUB
+      label(for="login")     
+        select.settings__login(name="login")
+          option(value="login") Login
+          option(value="signup") Sign Up
+  .header-main
+    .header-main__menu
+      span
+      span
+      span
+    .header-main__logo Re:stock
+    .header-main__cart
+      include /assets/img/svg/cart.svg
+    .header-main__search 
+      include /assets/img/svg/search.svg

@@ -1,0 +1,16 @@
+mixin sliderItem
+  .main-slider__item.main-slide
+    .main-slide__descr.slide-description
+      .slide-description__title New Arrivals
+      .slide-description__info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  minim eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad veniam, quis nostrud. 
+      a(href="#").slide-description__link View Collection
+        include /assets/img/svg/arrow.svg
+    .main-slide__image
+      img(src="/assets/img/content/sliderImage01.png", alt="")
+
+.main-slider__wrapper
+  .main-slider
+    +sliderItem
+    +sliderItem
+    +sliderItem
+

@@ -52,7 +52,10 @@ module.exports = {
       {
         // JavaScript
         test: /\.pug$/,
-        loader: "pug-loader"
+        loader: "pug-loader",
+        options: {
+          root: path.resolve(__dirname, '../src')
+        }
       },
       {
         // JavaScript
