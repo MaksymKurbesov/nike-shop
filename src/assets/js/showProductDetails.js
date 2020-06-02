@@ -4,7 +4,10 @@ const showProductDetails = () => {
 
   productImgs.forEach(item => {
     item.addEventListener('click', (e) => {
-      e.target.closest('.product-info').querySelector('.overlay').classList.add('product-info__overlay--active');
+      productElems.forEach(item => {
+        item.classList.remove('product-info__overlay--active')
+      })
+      e.target.closest('.product-info').querySelector('.overlay').classList.add('product-info__overlay--active', 'animate__animated', 'animate__fadeIn');
     })
   })
 

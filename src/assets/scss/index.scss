@@ -5,6 +5,17 @@
 @import "utils/fonts";
 @import "utils/reset";
 
+.buyNowButton {
+  display: inline-block;
+  padding: 11px 32px;
+  background-color: $aqua;
+  color: #ffffff;
+  font-family: Lora;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
 .container {
   max-width: 1170px;
   width: 97%;
@@ -70,3 +81,6 @@ li {
 // Components
 @import './components/main/main';
 @import './components/ourCollections/collections';
+@import './components/promo/promo';
+@import './components/latestNews/latestNews';
+@import './components/bestOffer/bestOffer';

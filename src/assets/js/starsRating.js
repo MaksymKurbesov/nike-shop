@@ -11,7 +11,11 @@ const starsRating = () => {
         const allChildrenInputs = et.parentNode.querySelectorAll('.star-rating__input'),
               valueClickedStar = et.previousElementSibling.value,
               gradeElem = et.closest('.product-info__grade');
-        gradeElem.setAttribute('data-grade', valueClickedStar);
+        try {
+          gradeElem.setAttribute('data-grade', valueClickedStar);
+        } catch (error) {
+          
+        }
         allChildrenInputs.forEach(item => {
           if (item.value <= valueClickedStar) {
             item.nextElementSibling.classList.add('star-rating__ico--active')

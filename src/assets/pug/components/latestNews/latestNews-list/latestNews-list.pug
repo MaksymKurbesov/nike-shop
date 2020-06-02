@@ -1,0 +1,13 @@
+mixin news-item(date, picture, title, descr)
+  .latestNews-list__item.news-item
+    .news-item__date= date
+    .news-item__picture
+      img(src=`/assets/img/content/news-image${picture}.png`, alt="")
+    .news-item__title= title
+    .news-item__descr= descr
+    a(href="#").news-item__readMore Read more...
+
+.latestNews-list
+  +news-item("22 Aug", "01" ,"Get 20% OFF on Nike Air Uomo", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut l")
+  +news-item("10 Jul", "02" ,"Get 20% OFF on Nike Air Uomo", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut l")
+  +news-item("17 May", "03" ,"Get 20% OFF on Nike Air Uomo", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut l")    

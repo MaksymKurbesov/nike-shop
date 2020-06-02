@@ -3,9 +3,10 @@ import 'slick-carousel'
 
 const mainSlider = () => {
   $('.main-slider').slick({
-    arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
+    prevArrow: document.querySelector('.main-slider-arrows__prev'),
+    nextArrow: document.querySelector('.main-slider-arrows__next')
   })
 }
 
