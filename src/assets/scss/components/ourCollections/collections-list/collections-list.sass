@@ -20,6 +20,9 @@
   display: flex
   justify-content: center
   cursor: pointer
+  transition: 0.5s
+  &:hover
+    transform: scale(1.1)
 
 .product-info__name
   color: #444444
@@ -52,6 +55,7 @@
   margin-top: 10px
   text-align: center
 
+@keyframes fade
 
 .product-info__overlay
   width: 270px
@@ -62,10 +66,11 @@
   position: absolute
   top: 0
   left: 0
+  transition: 0.5s
   background-color: rgba(0, 0, 0, 0.5)  
 
 .product-info__overlay--active
-  display: flex      
+  display: flex   
 
 .overlay__details, .overlay__cart
   margin: 0 5px

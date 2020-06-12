@@ -1,0 +1,31 @@
+mixin svgIcon(icon)
+  case icon
+    when 'Facebook'
+      include /assets/img/svg/facebook.svg
+    when 'Twitter'
+      include /assets/img/svg/twitter.svg
+    when 'Instagram'
+      include /assets/img/svg/instagram.svg
+
+mixin navList(links, svgIcons)
+  ul
+    each link in links
+      if svgIcons
+        li
+          +svgIcon(link)
+          a(href="#")= link
+      else
+        li
+          a(href="#")= link     
+
+.footer-main.container
+  .footer-main__company Company
+    +navList(['About', 'Our Shops', 'News', 'Delivery'], ['test'])
+  .footer-main__help Help
+    +navList(['Contact us', 'F.A.Q.', 'Help', 'Terms'])  
+  .footer-main__social Get Social
+    +navList(['Facebook', 'Twitter', 'Instagram'], true) 
+  .footer-main__contact.contacts Contact
+    adress.contacts__address 7/4 Fire Briagde Road Khulna, 9100, Bangladesh
+    a(href="tel:+123456789").contacts__phone #[span Phone:] 123-456-789
+    a(href="mailto:support@domain.com").contacts__email #[span Email:] support@domain.com

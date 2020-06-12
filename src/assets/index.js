@@ -6,11 +6,13 @@ import 'animate.css'
 import '../assets/scss/index.scss';
 import starsRating from './js/starsRating';
 import showProductDetails from './js/showProductDetails';
+import changeColorShoes from './js/changeColorShoes';
 
 window.addEventListener('DOMContentLoaded', () => {
   mainSlider()
   starsRating()
   showProductDetails()
+  changeColorShoes()
 })
 
 

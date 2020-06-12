@@ -7,12 +7,14 @@ const showProductDetails = () => {
       productElems.forEach(item => {
         item.classList.remove('product-info__overlay--active')
       })
-      e.target.closest('.product-info').querySelector('.overlay').classList.add('product-info__overlay--active', 'animate__animated', 'animate__fadeIn');
+      e.target.closest('.product-info').querySelector('.product-info__overlay').classList.add('product-info__overlay--active');
     })
   })
 
   productElems.forEach(item => {
     item.addEventListener('click', () => {
+      // item.classList.remove('animate__fadeIn')
+      // item.classList.add('animate__fadeOut')
       item.classList.remove('product-info__overlay--active')
     })
   })
