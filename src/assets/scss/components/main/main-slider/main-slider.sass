@@ -1,0 +1,94 @@
+.main-slider__wrapper
+  height: 650px
+  padding: 0 50px
+  background-color: #eef1f8
+  position: relative
+
+.main-slider
+  max-width: 1370px
+  padding: 0 100px
+  margin: 0 auto
+  height: 100%
+  display: flex
+  align-items: center
+  position: relative
+  z-index: 2
+
+.main-slide__descr, .main-slide__image
+  width: 50%
+  float: left
+
+.slide-description__title
+  color: $aqua
+  font-size: 65px
+  font-family: Butler
+  font-weight: 700
+  letter-spacing: 3.25px
+
+.slide-description__info
+  max-width: 500px
+  color: #666666
+  font-family: Raleway
+  font-weight: 500
+  font-size: 14px
+  line-height: 25px
+
+.slide-description__link
+  color: $aqua
+  font-family: Lora
+  font-weight: 400
+  font-style: italic
+  font-size: 15px 
+  display: flex
+  align-items: center
+  margin-top: 20px
+  svg
+    fill: $aqua
+    margin-left: 5px
+    width: 13px
+
+.main-slider-arrows
+  max-width: 1600px
+  margin: 0 auto
+  position: relative
+  display: flex
+  justify-content: space-between
+  transform: translateY(-50%)
+  top: -50%
+  left: 0
+  z-index: 1
+
+
+.main-slider-arrows__prev, .main-slider-arrows__next
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 10px 8px 10px 10px
+  width: 45px
+  height: 45px
+  border: 2px solid rgba(0, 0, 0, 0.5)
+  border-radius: 50px
+  // position: absolute
+  // top: 50%
+  // transform: translateY(-50%)
+  // right: 5%
+  cursor: pointer
+  svg
+    fill: rgba(0, 0, 0, 0.5)
+    width: 18px
+    
+
+.main-slider-arrows__prev
+  // position: absolute
+  // top: 50%
+  // transform: translateY(-50%)
+  // left: 5%
+  float: left
+  padding: 10px 12px 10px 10px
+  svg
+    transform: rotate(180deg)
+    
+
+
+
+

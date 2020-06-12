@@ -1,0 +1,63 @@
+.s-bestOffer
+  height: 470px
+  background-color: #eef1f8
+  display: flex
+  align-items: center
+
+.bestOffer
+  display: flex
+
+.bestOffer-image
+  width: 550px
+  height: 300px
+  position: relative
+  img
+    position: absolute
+    display: block
+    top: 0
+    left: 0
+
+.bestOffer-info
+  max-width: 540px
+  margin-left: 50px 
+
+.bestOffer-info__title
+  color: #333333
+  font-family: Butler
+  font-size: 50px
+  font-weight: 700
+
+.bestOffer-info__rating
+  margin-top: 5px
+
+.bestOffer-info__descr, .bestOffer-info__colors   
+  color: #666666
+  font-family: Raleway
+  font-size: 14px
+  font-weight: 500
+  line-height: 25px
+  margin-top: 17px
+
+
+.shoes-colors
+  display: flex
+  span
+    display: block
+    width: 32px
+    height: 32px
+    border-radius: 50px
+    cursor: pointer
+    &:not(:last-child)
+      margin-right: 10px
+      
+  #Aqua
+    background-image: radial-gradient(circle 19px at center, #1af8ff 0%, #26b2b6 100%)
+  #Red
+    background-image: radial-gradient(circle 19px at center, #fa0805 0%, #a32423 100%) 
+  #Yellow
+    background-image: radial-gradient(circle 19px at center, #f2a431 0%, #c4862a 100%)
+  #Default
+    background-image: radial-gradient(circle 19px at center, #46d8af 0%, #4df8c8 100%)       
+
+.bestOffer-info__button
+  margin-top: 30px       

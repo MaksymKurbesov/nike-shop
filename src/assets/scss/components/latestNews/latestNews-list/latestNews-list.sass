@@ -1,0 +1,50 @@
+.latestNews-list
+  display: flex
+
+.news-item
+  position: relative
+  width: 360px
+  &:not(:last-child)
+    margin-right: 45px
+    
+
+.news-item__date
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 50px
+  height: 50px
+  padding: 0 10px
+  background-color: $aqua
+  position: absolute
+  top: 20px
+  left: 20px  
+  color: #ffffff
+  text-align: center
+  font-family: Lora
+  font-size: 14px
+  font-weight: 700
+  line-height: 16px
+
+.news-item__title
+  color: #333333
+  font-family: Lora
+  font-size: 18px
+  font-weight: 700
+  margin-top: 20px
+
+.news-item__descr
+  color: #666666
+  font-family: Raleway
+  font-size: 14px
+  font-weight: 500
+  line-height: 24px
+  margin-top: 10px
+
+.news-item__readMore
+  display: block
+  color: $aqua
+  font-family: Lora
+  font-size: 16px
+  font-weight: 700
+  margin-top: 10px    

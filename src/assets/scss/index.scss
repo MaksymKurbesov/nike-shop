@@ -5,7 +5,17 @@
 @import "utils/fonts";
 @import "utils/reset";
 
-
+.buyNowButton {
+  display: inline-block;
+  padding: 11px 32px;
+  background-color: $aqua;
+  color: #ffffff;
+  font-family: Lora;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
 
 .container {
   max-width: 1170px;
@@ -66,9 +76,12 @@ li {
 }
 
 // Modules:
-@import './modules/footer';
+@import './modules/footer/footer';
 @import './modules/header';
 
-//Pages
-
-@import './pages/main/main';
+// Components
+@import './components/main/main';
+@import './components/ourCollections/collections';
+@import './components/promo/promo';
+@import './components/latestNews/latestNews';
+@import './components/bestOffer/bestOffer';
