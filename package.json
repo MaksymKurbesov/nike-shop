@@ -33,6 +33,7 @@
     "animate.css": "^4.1.0",
     "gulp": "^4.0.2",
     "jquery": "^3.5.1",
+    "nouislider": "^14.6.0",
     "slick-carousel": "^1.8.1",
     "vue": "^2.6.11"
   },

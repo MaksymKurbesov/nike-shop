@@ -71,11 +71,58 @@
   text-align: center  
 
 .header-main__cart, .header-main__search
-  flex-grow: 0.1 
+  flex-grow: 0.1
+  cursor: pointer 
+  position: relative
   svg
     width: 19px
     height: 100%  
     fill: #444
 
 .header-main__search
-  flex-grow: 0      
+  flex-grow: 0
+
+.header-main__cart--opened
+  width: 300px
+  min-height: 400px
+  padding: 25px
+  display: none
+  background-color: rgba(255, 255, 255, 0.9)
+  box-shadow: 2px 4px 19px 2px rgba(0,0,0,0.75);
+  position: absolute
+  z-index: 10
+  right: 450px
+  top: 120px
+  &--active
+    display: block
+  span
+    font-weight: 700
+    display: block
+    text-align: right
+    cursor: pointer  
+
+.cart-count
+  display: flex
+  justify-content: center
+  align-items: center
+  font-weight: 700
+  color: #fff
+  position: absolute
+  width: 25px
+  height: 25px
+  background-color: $aqua
+  border-radius: 50px
+  top: 20px
+  right: 60px
+
+.cart-item
+  display: flex
+  align-items: center
+  font-size: 14px
+
+.cart-name
+  text-align: center
+  margin-right: 10px
+
+.cart-price
+  font-weight: 600

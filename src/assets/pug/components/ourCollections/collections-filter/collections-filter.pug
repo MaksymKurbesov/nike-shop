@@ -1,0 +1,21 @@
+.collections-filter.filter
+  .filter__button
+    .filter__icon
+      span
+      span
+      span
+    .filter__title filter
+  .filter__body
+    .filter-by-price
+      .filter__name Sorted by price
+      .filter__range
+      input.filter__from(type="text" data-sortType="min-price")
+      input.filter__to(type="text" data-sortType="max-price")
+    .filter-by-name
+      .filter__name Sorted by name
+      button.filter__name-A(data-sortType="A-Z") A-Z
+      button.filter__name-Z(data-sortType="Z-A") Z-A
+    .filter-by-grade
+      .filter__name Sorted by rating
+      button.filter__rating-high(data-sortType="highest") Highest
+      button.filter__rating-low(data-sortType="lowest") Lowest    
