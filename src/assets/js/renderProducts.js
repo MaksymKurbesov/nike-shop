@@ -1,6 +1,7 @@
 import { SVG_ICONS } from './mock/svg';
 import starsRating from './starsRating';
 import showProductDetails from './showProductDetails';
+import addProductToCart from './addProductToCart';
 
 const renderProducts = (shoes) => {
   let shoesCopy = shoes.slice()
@@ -62,6 +63,7 @@ const renderProducts = (shoes) => {
     })
     starsRating()
     showProductDetails()
+    addProductToCart()
   }
 
   init()

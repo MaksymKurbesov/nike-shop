@@ -14,7 +14,6 @@ const showProductDetails = () => {
 
   overlayCart.forEach(item => {
     item.addEventListener(`click`, (evt) => {
-      console.log(evt.currentTarget.closest(`.product-info`))
       evt.currentTarget.parentNode.querySelector(`.overlay__done`).style.display = `flex`
       evt.currentTarget.style.display = `none`
     })

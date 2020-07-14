@@ -90,4 +90,8 @@ li {
 @import './components/promo/promo';
 @import './components/latestNews/latestNews';
 @import './components/bestOffer/bestOffer';
-@import './modules/menu-opened/menu-opened.sass'
+@import './modules/menu-opened/menu-opened.sass';
+
+// Adaptive
+
+@import './adaptive.sass';

@@ -48,6 +48,7 @@ const filter = () => {
   }
 
   setSortTypeHandler(filterElements, `click`)
+  
   filterElement.noUiSlider.on(`change`, (evt) => {
     renderProducts(sortByType(shoesCopy, `price`, evt[0], evt[1]))
   })

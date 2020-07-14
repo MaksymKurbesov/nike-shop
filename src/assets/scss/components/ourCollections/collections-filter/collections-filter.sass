@@ -1,0 +1,56 @@
+.filter
+  position: relative;
+
+.filter__button
+  display: flex
+  position: relative
+  align-items: center
+  margin-top: 80px
+
+.filter__title
+  color: #444444
+  font-family: Raleway
+  font-size: 13px
+  font-weight: 500
+  line-height: 0
+  text-transform: uppercase
+  cursor: pointer
+
+.filter__icon
+  cursor: pointer
+  margin-right: 13px
+  span
+    display: block
+    width: 15px
+    height: 1px
+    background-color: #29323b
+    &:not(:last-child)
+      margin-bottom: 4px
+
+.filter__body
+  padding: 25px
+  width: 300px
+  height: 500px
+  background-color: rgba(0, 0, 0, 0.5)
+  position: absolute
+  transition: 0.5s
+  left: -800px
+  top: 20px
+  z-index: 10
+  &--active
+    left: 0
+
+
+.filter__range
+  margin-bottom: 30px
+
+.filter__name
+  font-size: 20px
+  color: #fff
+  margin: 40px 0 20px 0
+
+.filter__from, .filter__to
+  width: 70px
+
+.filter__name-A, .filter__rating-high, .filter__from,  
+  margin-right: 20px

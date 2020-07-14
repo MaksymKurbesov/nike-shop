@@ -9,15 +9,16 @@ const addProductToCart = () => {
 
   cartCountElement.textContent = cartCount;
 
-  cartButton.addEventListener(`click`, () => {
-    cartContainerElement.classList.toggle(`header-main__cart--opened--active`)
+  cartButton.addEventListener(`click`, (evt) => {
+    cartContainerElement.classList.add(`header-main__cart--opened--active`)
   })
 
   cartCloseButton.addEventListener(`click`, () => {
-    cartContainerElement.classList.toggle(`header-main__cart--opened--active`)
+    cartContainerElement.classList.remove(`header-main__cart--opened--active`)
   })
 
   addToCartButtons.forEach(item => item.addEventListener(`click`, (evt) => {
+    evt.stopImmediatePropagation()
     const clickedProduct = evt.currentTarget.closest(`.product-info`);
     const isSalePrice = clickedProduct.querySelector(`.price-new`)
     const newElement = document.createElement(`div`)
